@@ -21,8 +21,12 @@ function() {
 
   if (pc > utente) {
     vincitore = 'Mi dispiace.. Hai perso.';
+    document.getElementById('punteggio-migliore').className = 'red';
   } else if (pc == utente) {
     vincitore = 'PAREGGIO!';
+    document.getElementById('punteggio-migliore').className = 'grey';
+  } else {
+    document.getElementById('punteggio-migliore').className = 'green';
   }
 
   //  stampo
